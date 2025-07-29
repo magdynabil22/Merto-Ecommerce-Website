@@ -1,0 +1,131 @@
+.underline-hov:hover {
+    text-decoration: underline;
+}
+
+.category-btn {
+    background-color: #EBEEF0;
+    padding: 2% 5%;
+}
+
+.category-btn:hover {
+    background-color: white;
+    outline: 1px solid black;
+}
+
+.product-grid-section .flash-deals-card {
+    width: 25% !important;
+    height: 320px !important;
+}
+
+.view-more-btn:hover {
+    background-color: #dc3545;
+    color: white;
+    border: none !important;
+}
+
+.form-check-input[type=checkbox] {
+    border-color: black;
+}
+
+.form-check-input[type=checkbox]:checked {
+    background-color: black !important;
+    border-color: black !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.form-check-input[type=checkbox]:hover {
+    background-color: black !important;
+    border-color: black !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+    cursor: pointer !important;
+}
+
+.form-check-input[type=checkbox]:focus {
+    border-color: black !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.color-black {
+    background-color: #000000;
+}
+
+.color-blue {
+    background-color: #007bff;
+}
+
+.color-brown {
+    background-color: #8B4513;
+}
+
+.color-burgundy {
+    background-color: #800020;
+}
+
+.color-cool-pink {
+    background-color: #FF69B4;
+}
+
+.color-deep-purple {
+    background-color: #663399;
+}
+
+.color-gray {
+    background-color: #808080;
+}
+
+.color-green {
+    background-color: #28a745;
+}
+
+.color-light-brown {
+    background-color: #D2B48C;
+}
+
+.color-navy {
+    background-color: #000080;
+}
+
+.color-orange {
+    background-color: #fd7e14;
+}
+
+.color-pink {
+    background-color: #FFC0CB;
+}
+
+.color-purple {
+    background-color: #6f42c1;
+}
+
+.color-red {
+    background-color: #dc3545;
+}
+
+.color-rosewood {
+    background-color: #65000B;
+}
+
+.color-true-cotal {
+    background-color: #008B8B;
+}
+
+.color-white {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}
+
+.color-yellow {
+    background-color: #ffc107;
+}
+
+.color-square {
+    width: 16px;
+    height: 16px;
+    border-radius: 5%;
+    margin-right: 2%;
+    border: 1px solid #dee2e6;
+}
+.form-check-label{
+    font-weight: 600;
+}

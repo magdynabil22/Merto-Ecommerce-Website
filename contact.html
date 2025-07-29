@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Merto</title>
+    <link rel="icon" href="images/icon.png">
+    <link name="keywords" content="">
+    <link name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css?family%3DPoppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%26display%3Dswap%26ver%3D1748016088">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="merto-container merto-header-sticky">
+        <div class="row merto-my-4 mb-4 pe-0 align-items-center align-content-center justify-content-between">
+            <div class="left-header col-2">
+                <img src="images/logo-black.png" class="logo-img" alt="logo">
+            </div>
+            <div class="middle-header col-lg-5">
+                <div class="row gap-3">
+                    <div class="merto-hov align-items-center justify-content-between row col-5">
+                        <button class="btn d-flex align-items-center justify-content-center">
+                            <i class="bi bi-telephone telephone-icon"></i>
+                            <div class="middle-header-content lh-sm col-9 ps-0">
+                                <p class="mb-0 fs-15">Contact us 24/7</p>
+                                <p class="fw-bold fs-15 mb-0">(+92) 3942 7879</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="middle-header-search bg-body-secondary col-lg-7 rounded-2 position-relative ">
+                        <form action="" get="" class="row col">
+                            <div class="category-dropdown border-end border-2 merto-my-4 ps-2 me-2 pe-0 search-bar">
+                                <button class="btn search-dropdown mx-0 ps-2 me-0 mt-1 fw-semibold fs-15" type="button"
+                                    id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Categories
+                                    <i class="bi bi-chevron-down ms-0 px-0 align-middle"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                                    <li><a class="dropdown-item" href="#" data-category="all">All Categories</a></li>
+                                    <li><a class="dropdown-item" href="#" data-category="electronics">Autopart</a></li>
+                                    <li><a class="dropdown-item" href="#" data-category="clothing">Beauty & Health</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-category="books">Electronic</a></li>
+                                    <li><a class="dropdown-item" href="#" data-category="home">Fashion</a></li>
+                                    <li><a class="dropdown-item" href="#" data-category="sports">Game Accessories</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-category="toys">Home & Decor</a></li>
+                                </ul>
+                            </div>
+                            <div class="search-form col align-content-center ms-0 ps-1 pe-2" role="search">
+                                <input
+                                    class="form-control search-input bg-body-secondary border-0 px-0 pe-0 overflow-hidden"
+                                    type="search" placeholder="Search for products" aria-label="Search">
+                                <button
+                                    class="btn position-absolute z-3 top-0 end-0 me-2 bottom-0 bg-dark rounded-2 my-1 py-0"
+                                    type="submit">
+                                    <i class="bi bi-search text-white"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Section -->
+            <div class="right-header align-items-center row gap-3 justify-content-end col-lg-4 col-md-5 ">
+                <div class="align-items-center col-6 justify-content-end">
+                    <div class="fw-semibold d-flex gap-3 me-2">
+                        <!-- Language Selector -->
+                        <div class="language-selector merto-hov">
+                            <img src="images/english.png" alt="English" class="language-icon object-fit-fill rounded-2">
+                            <span class="fw-semibold ms-1">English</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                        <!-- Currency Selector -->
+                        <div class="currency-selector merto-hov">
+                            <span class="fw-semibold">USD</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-end">
+                    <!-- Account -->
+                    <div class="">
+                        <button class="btn account-btn fs-15 align-items-center merto-hov align-content-center d-flex">
+                            <i class="bi bi-person person-icon merto-hov"></i>
+                            <span class="fs-6 fw-semibold d-none d-lg-inline ms-2">Account</span>
+                        </button>
+                    </div>
+                    <!-- Wishlist -->
+                    <button class="wishlist-btn btn position-relative merto-hov">
+                        <i class="bi bi-heart wishlist-icon merto-hov"></i>
+                        <span class="zero-badge position-absolute text-white bg-danger end-0 top-0 me-0 mt-1">0</span>
+                    </button>
+                    <!-- Cart -->
+                    <button class="cart-btn btn position-relative align-items-center">
+                        <i class="bi bi-cart cart-icon merto-hov"></i>
+                        <span class="zero-badge position-absolute text-white bg-danger end-0 top-0  me-0 mt-1">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation Menu -->
+    <nav class=" border-bottom border-top">
+        <div class="merto-container row align-items-center">
+            <div class="col-lg-2 border-end merto-hov ps-0">
+                <button class="btn px-0 py-3 d-flex align-items-center fs-15">
+                    <i class="bi bi-list me-2"></i>
+                    SHOP BY CATEGORIES
+                </button>
+            </div>
+            <div class="col-lg-7 py-2">
+                <ul class="nav justify-content-between">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle merto-hov fs-15 text-black" href="#"
+                            data-bs-toggle="dropdown">Homepages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle merto-hov ps-0 fs-15 text-black" href="#"
+                            data-bs-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle merto-hov ps-0 fs-15 text-black" href="#"
+                            data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Product List</a></li>
+                            <li><a class="dropdown-item" href="#">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle merto-hov ps-0 fs-15 text-black" href="#"
+                            data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black merto-hov ps-0 fs-15 text-black" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link merto-hov ps-0 fs-15 text-black" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link merto-hov ps-0 fs-15 text-black" href="#">
+                            <i class="bi bi-percent bg-transparent"></i>
+                            Best Discount</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 py-2 pe-0">
+                <a href="#" class="text-decoration-none merto-hov d-flex justify-content-end align-items-center">
+                    <span class="fs-15-light me-1  align-content-end merto-hov text-black">Recently Viewed</span>
+                    <i class="bi bi-chevron-down align-content-center"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="mt-5 contact-us-section">
+        <div class="merto-container">
+            <div class="text-center mb-5">
+                <h1 class="display-1 fw-bold mb-3 pt-2">Contact us</h1>
+                <p class="text-muted mb-2">34 Main Street, Los Angeles 9021</p>
+                <p class="text-muted">United States</p>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <i class="bi bi-telephone fs-4 text-black mb-5"></i>
+                    <h5 class="fs-15 fw-bold mt-2">Customer service</h5>
+                    <p class="mb-2 animated-underline-color merto-hov d-inline-block position-relative">+92 3942 7879</p>
+                    <p class="text-muted fs-12 fw-semibold">Call us from 8am to 8pm</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <i class="bi bi-chat-square fs-4 text-black mb-3"></i>
+                    <h5 class="fs-15 fw-bold mt-2">Chat with us</h5>
+                    <p class="animated-underline d-inline-block position-relative mt-0 mb-2"><span class="text-live">●</span> Live Chat</p>
+                    <p class="text-muted fs-12 fw-semibold">Daily: 8 am to 11 pm</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <i class="bi bi-envelope fs-4 text-black mb-3"></i>
+                    <h5 class="fs-15 fw-bold mt-2">Write to us</h5>
+                    <p class="animated-underline-color merto-hov d-inline-block position-relative">contact@example.com</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <i class="bi bi-person-plus fs-4 text-black mb-3"></i>
+                    <h5 class="fs-15 fw-bold mt-2">Follow us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center contact-form-section">
+                <div class="col-lg-9">
+                    <h3 class="text-center mb-0 fw-bold">Do you have some questions?</h3>
+                    <form class="px-5 py-4 rounded-3">
+                        <div class="row mb-4 mt-2">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control fs-17 fw-semibold "
+                                    placeholder="Name and Surname *" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control fs-17 fw-semibold" placeholder="Email *"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control fs-17 fw-semibold" placeholder="Subject *" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control fs-17 fw-semibold" rows="6" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="btn btn-get-in-touch text-white bg-dark btn-sm py-3 fw-bold col-12">GET IN
+                                TOUCH</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Google Map Section -->
+    <section class="my-5">
+        <div class="mb-5 pt-3 pb-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d94406.42615381627!2d-118.23296069208374!3d34.03789864976318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1752365538109!5m2!1sen!2seg"
+                width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- Stores Section -->
+    <section class="merto-container mb-5">
+        <h2 class="text-center mb-4 fs-3 fw-bold mt-2">Stores around the world</h2>
+        <div class="row justify-content-between pt-4">
+            <div class="col-lg-4 mb-4">
+                <img src="images/store1.jpg" class="card-img-top store-img" alt="Los Angeles Store">
+                <div class="card-body mt-4">
+                    <h5 class="card-title fw-bold mb-3">Los Angeles</h5>
+                    <p class="card-text text-muted mt-2 mb-0">34 Main Street, Los Angeles 9021</p>
+                    <p class="card-text text-muted mt-0">United States</p>
+                    <p class="card-text fw-semibold">+02 1234 567 88</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <img src="images/store2.jpg" class="card-img-top store-img" alt="New York Store">
+                <div class="card-body mt-4">
+                    <h5 class="card-title fw-bold mb-3">New York</h5>
+                    <p class="card-text text-muted mt-2 mb-0">515 Broadway 10015 New York</p>
+                    <p class="card-text text-muted mt-0">United States</p>
+                    <p class="card-text fw-semibold">+49 1234 567 88</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <img src="images/store3.jpg" class="card-img-top store-img" alt="California Store">
+                <div class="card-body mt-4">
+                    <h5 class="card-title fw-bold mb-3">California</h5>
+                    <p class="card-text text-muted mt-2 mb-0">1000 California St 68114 Omaha</p>
+                    <p class="card-text text-muted mt-0">United States</p>
+                    <p class="card-text fw-semibold">+44 1234 567 88</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="merto-container mt-4">
+            <div class="row justify-content-between">
+                <div class="col-lg-2 mb-4">
+                    <img src="images/logo-white.png" alt="Merto" class="mb-3 footer-logo mb-4">
+                    <div class="mb-3 footer-text-muted mt-1 mb-0">
+                        <i class="bi bi-geo-alt me-1 fs-6"></i>
+                        <span class="">29 SE 2nd Ave, Miami Florida 33131, United States</span>
+                        <div class="mt-2">
+                            <i class="bi bi-envelope me-1 fs-6"></i>
+                            <span>info@example.com</span>
+                        </div>
+                    </div>
+                    <div class="mb-3 fw-bolder merto-hov fs-5">
+                        <span>(+92) 3942 7879</span>
+                    </div>
+                </div>
+                <div class="row justify-content-between col-lg-5">
+                    <div class="col-lg-3 mb-4 ps-0 pe-0">
+                        <h6 class="mb-4 fs-17">SHOPPING</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Wishlist</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Shop by Brand</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Offers</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Track order</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Size Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 mb-4 pe-0 ps-0">
+                        <h6 class="fs-17 mb-4">INFORMATION</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Track Order</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Shipping & Returns</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">About us</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Help</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 mb-4 pe-0">
+                        <h6 class="fs-17 mb-4">ACCOUNT</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Cart</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">My account</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">My orders</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Wishlist</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-white text-decoration-none">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4 ps-0">
+                    <h6 class="fs-5 mb-4">Let's keep in touch</h6>
+                    <div class="d-flex mb-3 position-relative subscribe-email">
+                        <input type="email" class="form-control ps-4 py-3" placeholder="enter your email address">
+                        <button class="btn position-absolute end-0 top-0 me-1 mt-2">
+                            <i class="bi bi-arrow-right text-white fs-5"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex gap-4 ms-2 mt-4">
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-facebook text-white merto-hov"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-tiktok text-white merto-hov"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-twitter-x text-white merto-hov"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-youtube text-white merto-hov"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov">
+                            <i class="bi bi-instagram text-white merto-hov"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="merto-container my-4 merto-container-bordered rounded-2 py-4">
+            <div class="row justify-content-around pb-4">
+                <div class="row col-10">
+                    <div class="col-4 fs-6 fw-bold d-flex px-0 justify-content-start">
+                        <i class="bi bi-telephone footer-icon me-3"></i>
+                        <div class="">
+                            <span class="d-block">Didn't find what you were looking for?</span>
+                            <a href="#" class="animated-underline d-inline-block position-relative h6 text-decoration-none">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-4 fs-6 fw-bold d-flex px-0 justify-content-center">
+                        <i class="bi bi-emoji-smile footer-icon me-3"></i>
+                        <div class="">
+                            <span class="d-block">How can we help you today?</span>
+                            <a href="#" class="animated-underline d-inline-block position-relative h6 text-decoration-none">Help Center</a>
+                        </div>
+                    </div>
+                    <div class="col-4 fs-6 fw-bold d-flex px-0 justify-content-end">
+                        <i class="bi bi-chat-dots footer-icon me-3"></i>
+                        <div class="">
+                            <span class="d-block">We'd love to hear what you think!</span>
+                            <a href="#" class="animated-underline d-inline-block position-relative h6 text-decoration-none">Give Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="merto-container mt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-4">
+                    <p class="footer-text-muted mb-0 align-content-center fs-7">Copyright © Merto. All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <img src="images/payment-icons.png" alt="payment-icons" class="w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- for javascript-->
+    <script src="js/script.js"></script>
+    <script src="js/counter.js"></script>
+    <!-- for bootsrap java script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

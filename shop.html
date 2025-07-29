@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Merto</title>
+    <link rel="icon" href="images/icon.png">
+    <link name="keywords" content="">
+    <link name="description" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css?family%3DPoppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%26display%3Dswap%26ver%3D1748016088">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+
+</head>
+
+<body>
+    <header class="merto-container merto-header-sticky">
+        <div class="row merto-my-4 mb-4 pe-0 align-items-center align-content-center justify-content-between">
+            <div class="left-header col-2">
+                <img src="images/logo-black.png" class="logo-img" alt="logo">
+            </div>
+            <div class="middle-header col-lg-5">
+                <div class="row gap-3">
+                    <div class="merto-hov align-items-center justify-content-between row col-5">
+                        <button class="btn d-flex align-items-center justify-content-center">
+                            <i class="bi bi-telephone telephone-icon"></i>
+                            <div class="middle-header-content lh-sm col-9 ps-0">
+                                <p class="mb-0 fs-15">Contact us 24/7</p>
+                                <p class="fw-bold fs-15 mb-0">(+92) 3942 7879</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="middle-header-search bg-body-secondary col-lg-7 rounded-2 position-relative ">
+                        <form action="" get="" class="row col">
+                            <div class="category-dropdown border-end border-2 merto-my-4 ps-2 me-2 pe-0 search-bar">
+                                <button class="btn search-dropdown mx-0 ps-2 me-0 mt-1 fw-semibold fs-15" type="button"
+                                    id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Categories
+                                    <i class="bi bi-chevron-down ms-0 px-0 align-middle"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                                    <li><a class="dropdown-item" href="#" data-category="all">All Categories</a></li>
+                                    <li><a class="dropdown-item" href="#" data-category="electronics">Autopart</a></li>
+                                    <li><a class="dropdown-item" href="#" data-category="clothing">Beauty & Health</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-category="books">Electronic</a></li>
+                                    <li><a class="dropdown-item" href="#" data-category="home">Fashion</a></li>
+                                    <li><a class="dropdown-item" href="#" data-category="sports">Game Accessories</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#" data-category="toys">Home & Decor</a></li>
+                                </ul>
+                            </div>
+                            <div class="search-form col align-content-center ms-0 ps-1 pe-2" role="search">
+                                <input
+                                    class="form-control search-input bg-body-secondary border-0 px-0 pe-0 overflow-hidden"
+                                    type="search" placeholder="Search for products" aria-label="Search">
+                                <button
+                                    class="btn position-absolute z-3 top-0 end-0 me-2 bottom-0 bg-dark rounded-2 my-1 py-0"
+                                    type="submit">
+                                    <i class="bi bi-search text-white"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Section -->
+            <div class="right-header align-items-center row gap-3 justify-content-end col-lg-4 col-md-5 ">
+                <div class="align-items-center col-6 justify-content-end">
+                    <div class="fw-semibold d-flex gap-3 me-2">
+                        <!-- Language Selector -->
+                        <div class="language-selector merto-hov">
+                            <img src="images/english.png" alt="English" class="language-icon object-fit-fill rounded-2">
+                            <span class="fw-semibold ms-1">English</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                        <!-- Currency Selector -->
+                        <div class="currency-selector merto-hov">
+                            <span class="fw-semibold">USD</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-end">
+                    <!-- Account -->
+                    <div class="">
+                        <button class="btn account-btn fs-15 align-items-center merto-hov align-content-center d-flex">
+                            <i class="bi bi-person person-icon merto-hov"></i>
+                            <span class="fs-6 fw-semibold d-none d-lg-inline ms-2">Account</span>
+                        </button>
+                    </div>
+                    <!-- Wishlist -->
+                    <button class="wishlist-btn btn position-relative merto-hov">
+                        <i class="bi bi-heart wishlist-icon merto-hov"></i>
+                        <span class="zero-badge position-absolute text-white bg-danger end-0 top-0 me-0 mt-1">0</span>
+                    </button>
+                    <!-- Cart -->
+                    <button class="cart-btn btn position-relative align-items-center">
+                        <i class="bi bi-cart cart-icon merto-hov"></i>
+                        <span class="zero-badge position-absolute text-white bg-danger end-0 top-0  me-0 mt-1">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation Menu -->
+    <nav class=" border-bottom border-top">
+        <div class="merto-container row align-items-center">
+            <div class="col-lg-2 border-end merto-hov ps-0">
+                <button class="btn px-0 py-3 d-flex align-items-center fs-15">
+                    <i class="bi bi-list me-2"></i>
+                    SHOP BY CATEGORIES
+                </button>
+            </div>
+            <div class="col-lg-7 py-2">
+                <ul class="nav justify-content-between">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black merto-hov fs-15 active" href="#"
+                            data-bs-toggle="dropdown">Homepages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Homepage 1</a></li>
+                            <li><a class="dropdown-item" href="#">Homepage 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black merto-hov ps-0 fs-15" href="#"
+                            data-bs-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black merto-hov ps-0 fs-15" href="#"
+                            data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Product List</a></li>
+                            <li><a class="dropdown-item" href="#">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black merto-hov ps-0 fs-15" href="#"
+                            data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black merto-hov ps-0 fs-15" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black merto-hov ps-0 fs-15" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black merto-hov ps-0 fs-15" href="#">
+                            <i class="bi bi-percent bg-transparent"></i>
+                            Best Discount</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 py-2 pe-0">
+                <a href="#" class="text-decoration-none d-flex justify-content-end align-items-center">
+                    <span class="fs-15-light me-1 text-black align-content-end merto-hov">Recently Viewed</span>
+                    <i class="bi bi-chevron-down align-content-center"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- shop categories -->
+    <section class="merto-container my-2">
+        <div class="d-flex align-items-center justify-content-start my-3">
+            <button class="btn fs-15-light me-2 px-0 underline-hov">Home </button>
+            <i class="bi bi-chevron-right fs-12"></i>
+            <span class="fs-15 text-body-tertiary ms-2"> Shop</span>
+        </div>
+        <h2 class="fw-bold mb-0">Shop</h2>
+    </section>
+
+    <!-- Category Filter Buttons -->
+    <section class="merto-container mb-4 mt-5">
+        <div class="d-flex gap-2">
+            <button class="btn border-0 category-btn px-3 py-2">Autopart</button>
+            <button class="btn border-0 category-btn px-3 py-2">Beauty & Health</button>
+            <button class="btn border-0 category-btn px-3 py-2">Electronic</button>
+            <button class="btn border-0 category-btn px-3 py-2">Fashion</button>
+            <button class="btn border-0 category-btn px-3 py-2">Game Accessories</button>
+            <button class="btn border-0 category-btn px-3 py-2">Home & Decor</button>
+            <button class="btn border-0 category-btn px-3 py-2">Laptop & Computer</button>
+            <button class="btn border-0 category-btn px-3 py-2">Phone & Tablet</button>
+            <button class="btn border-0 category-btn px-3 py-2">TV, Audio - Video</button>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="merto-container my-5 product-grid-section">
+        <div class="row">
+            <!-- Sidebar Filters -->
+            <div class="col-lg-3 col-md-4 mb-4 pe-0">
+                <!-- color section -->
+                <div class="filter-section py-4 pe-5">
+                    <h5>Colors</h5>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-black rounded-1"></div>
+                        <span>Black</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">95</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-blue rounded-1"></div>
+                        <span>Blue</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">11</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-brown rounded-1"></div>
+                        <span>Brown</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">26</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-burgundy rounded-1"></div>
+                        <span>Burgundy</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">1</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-cool-pink rounded-1"></div>
+                        <span>Cool Pink</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">1</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-deep-purple rounded-1"></div>
+                        <span>Deep Purple</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">1</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-gray rounded-1"></div>
+                        <span>Gray</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">25</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-green rounded-1"></div>
+                        <span>Green</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">15</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-light-brown rounded-1"></div>
+                        <span>Light Brown</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">4</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-navy rounded-1"></div>
+                        <span>Navy</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">9</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-orange rounded-1"></div>
+                        <span>Orange</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">4</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-pink rounded-1"></div>
+                        <span>Pink</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">16</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-purple rounded-1"></div>
+                        <span>Purple</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">3</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-red rounded-1"></div>
+                        <span>Red</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">15</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-rosewood rounded-1"></div>
+                        <span>Rosewood</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">1</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-true-cotal rounded-1"></div>
+                        <span>True Cotal</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">1</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-white rounded-1"></div>
+                        <span>White</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">34</span>
+                    </div>
+                    <div class="color-option d-flex align-items-center mb-0 py-1">
+                        <div class="color-square color-yellow rounded-1"></div>
+                        <span>Yellow</span>
+                        <span class="color-count ms-auto text-muted fs-15 fw-normal">9</span>
+                    </div>
+                </div>
+                <!-- Brands Filter -->
+                <div class="mb-4 pe-5 brand-filter">
+                    <h6 class="fw-semibold mb-3">Brands</h6>
+                    <input type="text" class="form-control mb-3" placeholder="search brands ...">
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAmazon">
+                        <label class="form-check-label fs-15" for="brandAmazon">Amazon <span
+                                class="text-body-tertiary ms-2">(8)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandApple">
+                        <label class="form-check-label fs-15" for="brandApple">Apple <span
+                                class="text-body-tertiary ms-2">(11)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAsus">
+                        <label class="form-check-label fs-15" for="brandAsus">Asus <span
+                                class="text-body-tertiary ms-2">(3)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandNike">
+                        <label class="form-check-label fs-15" for="brandNike">Nike <span
+                                class="text-body-tertiary ms-2">(5)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAmazon">
+                        <label class="form-check-label fs-15" for="brandAmazon">Amazon <span
+                                class="text-body-tertiary ms-2">(8)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandApple">
+                        <label class="form-check-label fs-15" for="brandApple">Apple <span
+                                class="text-body-tertiary ms-2">(11)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAsus">
+                        <label class="form-check-label fs-15" for="brandAsus">Asus <span
+                                class="text-body-tertiary ms-2">(3)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandNike">
+                        <label class="form-check-label fs-15" for="brandNike">Nike <span
+                                class="text-body-tertiary ms-2">(5)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAmazon">
+                        <label class="form-check-label fs-15" for="brandAmazon">Amazon <span
+                                class="text-body-tertiary ms-2">(8)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandApple">
+                        <label class="form-check-label fs-15" for="brandApple">Apple <span
+                                class="text-body-tertiary ms-2">(11)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAsus">
+                        <label class="form-check-label fs-15" for="brandAsus">Asus <span
+                                class="text-body-tertiary ms-2">(3)</span></label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="brandNike">
+                        <label class="form-check-label fs-15" for="brandNike">Nike <span
+                                class="text-body-tertiary ms-2">(5)</span></label>
+                    </div>
+                </div>
+                <!-- Price Filter -->
+                <div class="mb-4">
+                    <h6 class="fw-semibold mb-3">Price</h6>
+                    <div class="mb-2 merto-hov">
+                        <input type="checkbox" class="form-check-input me-2 merto-hov" id="price1">
+                        <label class="form-check-label fs-15 merto-hov" for="price1">$0 - $100</label>
+                    </div>
+                    <div class="mb-2 merto-hov">
+                        <input type="checkbox" class="form-check-input me-2 merto-hov" id="price2">
+                        <label class="form-check-label fs-15 merto-hov" for="price2">$100 - $200</label>
+                    </div>
+                    <div class="mb-2 merto-hov">
+                        <input type="checkbox" class="form-check-input me-2 merto-hov" id="price3">
+                        <label class="form-check-label fs-15 merto-hov" for="price3">$200 - $500</label>
+                    </div>
+                    <div class="mb-3 merto-hov">
+                        <input type="checkbox" class="form-check-input me-2 merto-hov" id="price4">
+                        <label class="form-check-label fs-15 merto-hov" for="price4">$500+</label>
+                    </div>
+                    <div class="row gap-2">
+                        <input type="text" class="form-control d-flex w-25 ps-4" placeholder="Min">
+                        <input type="text" class="form-control d-flex w-25 ps-4" placeholder="Max">
+                        <button class="btn btn-dark d-flex w-25 px-3 ps-3 view-more-btn">FILTER</button>
+                    </div>
+                </div>
+                <!-- Size Filter -->
+                <div class="mb-4 pe-5">
+                    <h6 class="fw-semibold mb-3">Size</h6>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAmazon">
+                        <label class="form-check-label fs-15" for="brandAmazon">US <span
+                                class="text-body-tertiary">8</span></label>
+                        <span class="text-body-tertiary ms-auto">(1)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandApple">
+                        <label class="form-check-label fs-15" for="brandApple">US <span
+                                class="text-body-tertiary ms-2">9</span></label>
+                        <span class="text-body-tertiary ms-auto">(1)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAsus">
+                        <label class="form-check-label fs-15" for="brandAsus">US <span
+                                class="text-body-tertiary ms-2">10</span></label>
+                        <span class="text-body-tertiary ms-auto">(1)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandNike">
+                        <label class="form-check-label fs-15" for="brandNike">US <span
+                                class="text-body-tertiary ms-2">11</span></label>
+                        <span class="text-body-tertiary ms-auto">(1)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAmazon">
+                        <label class="form-check-label fs-15" for="brandAmazon">US <span
+                                class="text-body-tertiary ms-2">12</span></label>
+                        <span class="text-body-tertiary ms-auto">(1)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandApple">
+                        <label class="form-check-label fs-15" for="brandApple">US</label>
+                        <span class="text-body-tertiary ms-auto">(5)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAsus">
+                        <label class="form-check-label fs-15" for="brandAsus">US</label>
+                        <span class="text-body-tertiary ms-auto">(7)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandNike">
+                        <label class="form-check-label fs-15" for="brandNike">Nike</label>
+                        <span class="text-body-tertiary ms-auto">(10)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAmazon">
+                        <label class="form-check-label fs-15" for="brandAmazon">Amazon </label>
+                        <span class="text-body-tertiary ms-auto">(10)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandApple">
+                        <label class="form-check-label fs-15" for="brandApple">Apple </label>
+                        <span class="text-body-tertiary ms-auto">(9)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAsus">
+                        <label class="form-check-label fs-15" for="brandAsus">Asus </label>
+                        <span class="text-body-tertiary ms-auto">(7)</span>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandNike">
+                        <label class="form-check-label fs-15" for="brandNike">Nike </label>
+                        <span class="text-body-tertiary ms-auto">(4)</span>
+                    </div>
+                </div>
+                <!-- storage Filter -->
+                <div class="mb-4 pe-5">
+                    <h6 class="fw-semibold mb-3">Storage Capacity</h6>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandAmazon">
+                        <label class="form-check-label fs-15" for="brandAmazon">128 GB</label>
+                    </div>
+                    <div class="mb-2 d-flex merto-hov">
+                        <input type="checkbox" class="form-check-input me-2" id="brandApple">
+                        <label class="form-check-label fs-15" for="brandApple">64GB</label>
+                    </div>
+                </div>
+                <!-- Customer Rating -->
+                <div class="mb-4 pe-5">
+                    <h6 class="fw-semibold mb-3">Customer Rating</h6>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="rating5">
+                        <label class="form-check-label fs-15" for="rating5">
+                            <span class="text-black fs-17">★★★★★</span> <span class="text-muted">(82)</span>
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="rating4">
+                        <label class="form-check-label fs-15" for="rating4">
+                            <span class="text-black fs-17">★★★★☆</span> <span class="text-muted">(40)</span>
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="rating3">
+                        <label class="form-check-label fs-15" for="rating3">
+                            <span class="text-black fs-17">★★★☆☆</span> <span class="text-muted">(4)</span>
+                        </label>
+                    </div>
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input me-2" id="rating5">
+                        <label class="form-check-label fs-15" for="rating5">
+                            <span class="text-black fs-17">★★☆☆☆</span> <span class="text-muted">(82)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- Products Grid -->
+            <div class="col-lg-9 col-md-8">
+                <!-- Sort and Filter Controls -->
+                <div class="row mb-4 align-items-center">
+                    <div class="d-flex justify-content-end">
+                        <div class="col-md-6 text-end justify-content-end">
+                            <div class="d-flex align-items-center justify-content-between gap-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="saleOnly">
+                                    <label class="form-check-label fs-15 text-start" for="saleOnly">
+                                        Show only products on sale
+                                    </label>
+                                </div>
+                                <div class="countdown-border mx-auto"></div>
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <span class="fs-15 text-body-tertiary ">Sort:</span>
+                                    <select class="form-select border-0 ps-2 text-black fw-semibold pe-0">
+                                        <option>Sort by latest</option>
+                                        <option>Price: Low to High</option>
+                                        <option>Price: High to Low</option>
+                                        <option>Most Popular</option>
+                                    </select>
+                                </div>
+                                <div class="countdown-border mx-auto ms-0"></div>
+                                <div class="btn-group">
+                                    <button class="btn fs-17 px-0"><i
+                                            class="bi bi-grid-3x3-gap-fill text-black"></i></button>
+                                    <button class="btn fs-5 pe-0"><i class="bi bi-list-ul text-muted"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Products Grid -->
+                <div class="row">
+                    <!-- Product Card 1 -->
+                    <div class="flash-deals-card col-md-4 col-3 px-0">
+                        <div class="bg-white rounded-3 p-2 h-100 position-relative pb-0">
+                            <span
+                                class="text-white bg-featured position-absolute top-0 start-0 mx-4 my-3 px-2 py-1 fs-12 rounded-1 fw-bold w-auto">HOT</span>
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best1.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-3">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best2.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best3.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best4.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best5.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <span
+                                class="discount-badge text-white position-absolute top-0 start-0 mx-4 my-3 px-2 py-1 fs-12 rounded-1 fw-semibold">-17%</span>
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best6.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 7 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best7.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 8 -->
+                    <div class="flash-deals-card col-md-4 col-3 px-0">
+                        <div class="bg-white rounded-3 p-2 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best8.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-3">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 9 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best1.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 10 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best2.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 11 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <span
+                                class="discount-badge text-white position-absolute top-0 start-0 mx-4 my-3 px-2 py-1 fs-12 rounded-1 fw-semibold">-17%</span>
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best3.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 12 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best4.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 13 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best7.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 14 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best6.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 15 -->
+                    <div class="flash-deals-card col-md-4 col-3 px-0">
+                        <div class="bg-white rounded-3 p-2 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best8.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-3">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 16 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <span
+                                class="text-white bg-featured position-absolute top-0 start-0 mx-4 my-3 px-2 py-1 fs-12 rounded-1 fw-bold w-auto">HOT</span>
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best1.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 17 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best2.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 18 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best3.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 19 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <span
+                                class="discount-badge text-white position-absolute top-0 start-0 mx-4 my-3 px-2 py-1 fs-12 rounded-1 fw-semibold">-17%</span>
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best4.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 20 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best5.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 21 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best6.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 22 -->
+                    <div class="flash-deals-card col-md-4 col-3 px-0">
+                        <div class="bg-white rounded-3 p-2 h-100 position-relative pb-0">
+                            <span
+                                class="discount-badge text-white position-absolute top-0 start-0 mx-4 my-3 px-2 py-1 fs-12 rounded-1 fw-semibold">-17%</span>
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best7.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-3">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 23 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best7.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 24 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best8.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 25 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best1.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 26 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best2.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 27 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best3.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 28 -->
+                    <div class="flash-deals-card col-md-4 col-6 px-0">
+                        <div class="bg-white rounded-3 p-3 h-100 position-relative pb-0">
+                            <span
+                                class="text-white bg-featured position-absolute top-0 start-0 mx-4 my-3 px-2 py-1 fs-12 rounded-1 fw-bold w-auto">HOT</span>
+                            <div class="flash-icons d-flex flex-column position-absolute z-3">
+                                <div class="flash-icon" data-tooltip="Wishlist">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Quick View">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Add to Cart">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                                <div class="flash-icon" data-tooltip="Share">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                            </div>
+                            <div class="product-image text-center mb-0">
+                                <img src="images/best4.jpg" alt="Laptop" class="img-fluid product-img">
+                            </div>
+                            <div class="product-info ps-2">
+                                <h6 class="product-title fw-semibold mb-1 fs-15">Nike Air Max Unisex SYSTM Men
+                                    Sneaker Shoes</h6>
+                                <div class="product-price mb-1">
+                                    <span class="current-price fw-semibold fs-5">$148</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center mt-5">
+                    <p class="text-muted mb-3">Showing 28 of 210 results</p>
+                </div>
+                <div class="d-flex justify-content-center mb-4">
+                    <button class="btn btn-dark px-4 py-2 view-more-btn border-0">+ VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 overflow-x-hidden">
+        <div class="merto-container mt-4">
+            <div class="row justify-content-between">
+                <div class="col-lg-2 mb-4">
+                    <img src="images/logo-white.png" alt="Merto" class="mb-3 footer-logo mb-4">
+                    <div class="mb-3 footer-text-muted mt-1 mb-0">
+                        <i class="bi bi-geo-alt me-1 fs-6"></i>
+                        <span class="">29 SE 2nd Ave, Miami Florida 33131, United States</span>
+                        <div class="mt-2">
+                            <i class="bi bi-envelope me-1 fs-6"></i>
+                            <span>info@example.com</span>
+                        </div>
+                    </div>
+                    <div class="mb-3 fw-bolder merto-hov fs-5">
+                        <span>(+92) 3942 7879</span>
+                    </div>
+                </div>
+                <div class="row justify-content-between col-lg-5">
+                    <div class="col-lg-3 mb-4 ps-0 pe-0">
+                        <h6 class="mb-4 fs-17">SHOPPING</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#"
+                                    class="merto-hov fs-15 text-decoration-none text-white">Wishlist</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-decoration-none text-white">Shop by
+                                    Brand</a></li>
+                            <li class="mb-3"><a href="#"
+                                    class="merto-hov fs-15 text-decoration-none text-white">Offers</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-decoration-none text-white">Track
+                                    order</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-decoration-none text-white">Size
+                                    Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 mb-4 pe-0 ps-0">
+                        <h6 class="fs-17 mb-4">INFORMATION</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-decoration-none text-white">Track
+                                    Order</a></li>
+                            <li class="mb-3"><a href="#"
+                                    class="merto-hov fs-15 text-decoration-none text-white">Shipping & Returns</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-decoration-none text-white">About
+                                    us</a></li>
+                            <li class="mb-3"><a href="#"
+                                    class="merto-hov fs-15 text-decoration-none text-white">Help</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-decoration-none text-white">Gift
+                                    Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 mb-4 pe-0">
+                        <h6 class="fs-17 mb-4">ACCOUNT</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#"
+                                    class="merto-hov fs-15 text-decoration-none text-white">Cart</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-decoration-none text-white">My
+                                    account</a></li>
+                            <li class="mb-3"><a href="#" class="merto-hov fs-15 text-decoration-none text-white">My
+                                    orders</a></li>
+                            <li class="mb-3"><a href="#"
+                                    class="merto-hov fs-15 text-decoration-none text-white">Wishlist</a></li>
+                            <li class="mb-3"><a href="#"
+                                    class="merto-hov fs-15 text-decoration-none text-white">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4 ps-0">
+                    <h6 class="fs-5 mb-4">Let's keep in touch</h6>
+                    <div class="d-flex mb-3 position-relative subscribe-email">
+                        <input type="email" class="form-control ps-4 py-3" placeholder="enter your email address">
+                        <button class="btn position-absolute end-0 top-0 me-1 mt-2">
+                            <i class="bi bi-arrow-right text-white fs-5"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex gap-4 ms-2 mt-4">
+                        <a href="#" class="social-icon merto-hov text-decoration-none text-white">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov text-decoration-none text-white">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov text-decoration-none text-white">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov text-decoration-none text-white">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" class="social-icon merto-hov text-decoration-none text-white">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="merto-container my-4 merto-container-bordered rounded-2 py-4">
+            <div class="row justify-content-around pb-4">
+                <div class="row col-10">
+                    <div class="col-4 fs-6 fw-bold d-flex px-0 justify-content-start">
+                        <i class="bi bi-telephone footer-icon me-3"></i>
+                        <div class="">
+                            <span class="d-block">Didn't find what you were looking for?</span>
+                            <a href="#"
+                                class="animated-underline position-relative d-inline-block h6 text-decoration-none">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="col-4 fs-6 fw-bold d-flex px-0 justify-content-center">
+                        <i class="bi bi-emoji-smile footer-icon me-3"></i>
+                        <div class="">
+                            <span class="d-block">How can we help you today?</span>
+                            <a href="#"
+                                class="animated-underline position-relative d-inline-block h6 text-decoration-none">Help
+                                Center</a>
+                        </div>
+                    </div>
+                    <div class="col-4 fs-6 fw-bold d-flex px-0 justify-content-end">
+                        <i class="bi bi-chat-dots footer-icon me-3"></i>
+                        <div class="">
+                            <span class="d-block">We'd love to hear what you think!</span>
+                            <a href="#"
+                                class="animated-underline position-relative d-inline-block h6 text-decoration-none">Give
+                                Feedback</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="merto-container mt-4">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-4">
+                    <p class="footer-text-muted mb-0 align-content-center fs-7">Copyright © Merto. All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <img src="images/payment-icons.png" alt="payment-icons" class="w-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- for javascript-->
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/counter.js"></script>
+    <script src="js/owl-carousel.js"></script>
+    <!-- for bootsrap java script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

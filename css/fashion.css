@@ -1,0 +1,87 @@
+/* REQUIRED CSS for zoom effect */
+.advanced-zoom-container {
+    position: relative;
+    overflow: hidden;
+    cursor: zoom-in;
+    border-radius: 2px;
+    height: 650px;
+    width: fit-content;
+}
+
+.advanced-zoom-image {
+    transition: transform 0.1s ease;
+    transform-origin: center center;
+}
+
+/* Thumbnail styles */
+.nav-tabs .nav-link.active {
+    border: none !important;
+}
+
+.nav-tabs .nav-link img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: none !important;
+}
+
+.nav-item {
+    cursor: pointer !important;
+}
+
+.in-stock {
+    color: #26753C;
+    background-color: rgba(201, 237, 201, 0.414);
+}
+
+.add-remove {
+    width: 50%;
+}
+
+.add-remove:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.add-to-cart:hover {
+    background-color: white;
+    color: black;
+}
+
+.buy-now-btn:hover {
+    background-color: white;
+    color: #dc3545;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 15px;
+}
+
+.info-row.bg {
+    background-color: #f8f9fa;
+}
+
+.info-label {
+    font-weight: bold;
+    width: 30%;
+}
+
+.info-content {
+    width: 70%;
+}
+
+.bg-reviews {
+    background-color: #eee;
+}
+
+.review-form input[type="email"]:focus,
+.review-form input[type="text"]:focus,
+.review-form textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}

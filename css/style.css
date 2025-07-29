@@ -1,0 +1,947 @@
+/* css for the homepage */
+.list-group-item.active a {
+    color: #dc3545 !important;
+    background-color: transparent!important;
+    border: none;
+}
+.list-group {
+    --bs-list-group-active-bg: transparent;
+    --bs-list-group-active-border-color: #dee2e680;
+}
+nav .active {
+    color: #dc3545 !important;
+}
+
+.intro-section .carousel-img {
+    height: 550px;
+    width: 100%;
+}
+
+.intro-section .carousel-indicators [data-bs-target] {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    margin: 0 3%;
+}
+
+.intro-section .carousel-indicators [data-bs-target].active {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.bg-intro-1 {
+    background-color: #84a7a9;
+}
+
+.bg-intro-2 {
+    background-color: #dcbda1;
+}
+
+.bg-intro-3 {
+    background-color: #db5847;
+}
+
+.intro-section .carousel-item {
+    height: 550px;
+}
+
+.intro-section-left-img {
+    height: 550px;
+}
+
+.intro-section-right-img {
+    height: 275px;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom hover effect for intro-section-right images */
+.zoom-hov:hover .intro-section-right-img {
+    transform: scale(1.1);
+}
+
+.badge {
+    background-color: #e41227 !important;
+    border-radius: 50% !important;
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    transform: translateY(-30%);
+    z-index: 10;
+}
+
+/* CAROUSEL TRANSITION STYLES */
+.intro-section .carousel-item {
+    overflow: hidden;
+}
+
+.intro-section .carousel-text,
+.carousel-image {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Active slide - normal position */
+.intro-section .carousel-item.active .carousel-text,
+.carousel-image {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Outgoing slide - current slide being swiped */
+.intro-section .carousel-item.carousel-item-start .carousel-text {
+    transform: translateX(-20%);
+    opacity: 0;
+}
+
+.intro-section .carousel-item.carousel-item-start .carousel-image {
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+/* Incoming slide - next slide appearing */
+.intro-section .carousel-item.carousel-item-next .carousel-text {
+    transform: translateX(-20%);
+    opacity: 0;
+}
+
+.intro-section .carousel-item.carousel-item-next .carousel-image {
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+.intro-section .carousel-item.carousel-item-prev .carousel-text {
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+.intro-section .carousel-item.carousel-item-prev .carousel-image {
+    transform: translateX(-20%);
+    opacity: 0;
+}
+
+.bg-search {
+    background-color: #EBEEF0;
+}
+
+.search-section .search-input::placeholder {
+    background-color: white !important;
+}
+
+.search-section input[type="search"]:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.search-form-container {
+    height: 55px;
+}
+
+.search-section a {
+    font-size: 15px;
+    color: #6c757d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.search-item::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 10px;
+    background-color: #babbbc;
+}
+
+.search-item:last-child::after {
+    display: none;
+}
+
+.muted-hov:hover i {
+    color: black !important;
+    transition: color 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.category-img-wrapper {
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.category-img {
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.category-carousel {
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+
+.hover-circle {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.404);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.arrow-icon {
+    font-size: 1.3rem;
+    transform: translateX(-20%);
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover .hover-circle {
+    opacity: 1;
+}
+
+.category-item:hover .arrow-icon {
+    transform: translateX(0);
+}
+
+.underline-dashed {
+    color: #dc3545;
+    border-bottom: 1px solid #dc3545;
+}
+
+.underline-dashed:hover {
+    border-bottom: 1px dashed #dc3545 !important;
+    cursor: pointer;
+}
+
+.flash-deals-section-wrapper {
+    width: 98%;
+}
+
+.flash-deals-section {
+    height: 420px;
+}
+
+.flash-deals-card {
+    height: 360px;
+    width: 20%;
+    border: 1px solid #dfdcdc;
+    transition: box-shadow 0.15s ease;
+}
+
+.flash-deals-card:hover {
+    box-shadow:
+        2px 0px 8px rgba(0, 0, 0, 0.2),
+        -2px 0px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.discount-badge {
+    background-color: #dc3545 !important;
+}
+
+.sold-out-badge {
+    background-color: rgba(145, 145, 145, 1);
+}
+
+.countdown-item {
+    width: 35px;
+    height: 35px;
+}
+
+.countdown-border {
+    height: 20px;
+    border-right: 1px solid #dee2e6;
+    margin-left: 1rem;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #dc3545;
+    transition: width 0.3s ease;
+}
+
+.animated-underline:hover::after {
+    width: 100%;
+}
+
+/* Hover Icons */
+.flash-icons {
+    right: 15px;
+    top: 15px;
+    gap: 8px;
+}
+
+.flash-icon {
+    width: 34px;
+    height: 34px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 15px;
+    opacity: 0;
+    transform: translateY(-20px);
+    background-color: rgb(225, 225, 225);
+    position: relative;
+}
+
+.flash-deals-card:hover .flash-icon:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.08s;
+}
+
+.flash-deals-card:hover .flash-icon:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.16s;
+}
+
+.flash-deals-card:hover .flash-icon:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.24s;
+}
+
+.flash-deals-card:hover .flash-icon:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.32s;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 40%;
+    z-index: 1000;
+    background-color: #fff;
+    border: none;
+    border-radius: 8%;
+    font-size: 14px;
+    width: 20px;
+    height: 40px;
+    opacity: 0;
+}
+
+.flash-deals-container:hover .owl-prev,
+.flash-deals-container:hover .owl-next {
+    opacity: 1;
+}
+
+.owl-prev {
+    left: 0px;
+}
+
+.owl-next {
+    right: 0px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 10px 3px lightgrey;
+    transition: all 0.2s ease;
+}
+
+.flash-icon:hover {
+    background: black;
+    color: white;
+    cursor: pointer !important;
+}
+
+/* Custom Tooltip Styles */
+.flash-icon::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.1s ease, transform 0.1s ease;
+    pointer-events: none;
+    font-weight: 500;
+}
+
+.flash-icon::after {
+    content: '';
+    position: absolute;
+    right: 39px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: #000;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.flash-icon:hover::before,
+.flash-icon:hover::after {
+    opacity: 1;
+}
+
+.banner-bottom-description {
+    color: #FFFFFF4D;
+    font-family: "Damion", Sans-serif;
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.new-collection {
+    color: #CF600F;
+}
+
+.banner-item {
+    height: 315px;
+}
+
+.banner-img {
+    height: 315px;
+    transition: transform 0.3s ease;
+}
+
+.zoom-hov:hover .banner-img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.new-arrival-section {
+    height: 650px;
+}
+
+.new-arrival-card {
+    height: 250px;
+    border: 1px solid #dfdcdc;
+    transition: box-shadow 0.15s ease;
+    position: relative;
+    /* Ensure positioning context */
+}
+
+.new-arrival-card:hover {
+    box-shadow:
+        2px 0px 8px rgba(0, 0, 0, 0.2),
+        -2px 0px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.bg-featured {
+    background-color: #f05025;
+}
+
+/* Position icons at the bottom of the card */
+.arrival-icons {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    z-index: 15;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Individual icon styling */
+.arrival-icon {
+    width: 40px;
+    height: 35px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    background-color: rgb(225, 225, 225);
+    position: relative;
+}
+
+/* Show icons on card hover with staggered animation */
+.new-arrival-card:hover .arrival-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Icon hover effects */
+.arrival-icon:hover,
+.add-to-cart-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* Add to cart button styling */
+.add-to-cart-btn {
+    background-color: rgb(225, 225, 225);
+    border: 1px solid #dee2e6;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.new-arrival-card:hover .add-to-cart-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tooltip styles - positioned above icons now */
+.arrival-icon::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* Tooltip arrow pointing down */
+.arrival-icon::after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid rgba(0, 0, 0, 0.8);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* Show tooltip on icon hover */
+.arrival-icon:hover::before,
+.arrival-icon:hover::after {
+    opacity: 1;
+}
+
+.best-sellers-section {
+    height: 390px;
+}
+
+.best-sellers-section .flash-deals-card {
+    height: 330px;
+}
+
+.brova-section {
+    height: 590px;
+    background-color: rgba(235, 238, 240, 1);
+}
+
+.brova-img1 {
+    width: 90%;
+    height: 680px;
+}
+
+.hoodie {
+    height: 350px;
+    font-size: 160px;
+    letter-spacing: 25px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.brova-section .sale-badge {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 95px;
+    top: 120px;
+    left: 550px;
+    z-index: 500;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1 !important;
+    transition: all 2s ease;
+    color: rgb(177, 177, 177);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+}
+
+.carousel-control-next {
+    right: -80px;
+    bottom: 70px;
+}
+
+.carousel-control-prev {
+    left: -80px;
+    bottom: 70px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: black !important;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.thumbnail-btn {
+    width: 50px;
+    height: 50px;
+    padding: 0%;
+}
+
+.brova-card {
+    width: 30%;
+    top: 80px;
+    right: 80px;
+}
+
+.read-more-btn:hover {
+    color: white !important;
+}
+
+/* css for the contact us page */
+.contact-us-section a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.merto-container {
+    width: 86%;
+    margin: auto;
+}
+
+.merto-container-bordered {
+    border: 1px solid #ffffff24;
+}
+
+.fs-15 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fs-17 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.fs-12 {
+    font-size: 13px;
+}
+
+.merto-my-4 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.logo-img {
+    width: 63.5%;
+    height: 50%;
+}
+
+.search-bar {
+    width: 45%;
+}
+
+.footer-logo {
+    width: 64%;
+    height: fit-content;
+}
+
+.telephone-icon {
+    rotate: 18deg;
+    font-size: 30px;
+    color: black;
+}
+
+.merto-hov:hover {
+    color: #dc3545 !important;
+    transition: color 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+header .search-input::placeholder {
+    font-size: 14px;
+    color: rgb(143, 141, 141);
+    width: 43%;
+    font-weight: 500;
+}
+
+.bi-chevron-down {
+    font-size: 12px;
+}
+
+.wishlist-icon,
+.cart-icon {
+    font-size: 20px;
+}
+
+.person-icon {
+    font-size: 27px;
+}
+
+.language-icon {
+    width: 20px;
+    height: 22px;
+}
+
+.language-selector,
+.currency-selector {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.flag-img {
+    width: 20px;
+    height: 15px;
+}
+
+.zero-badge {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 800;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.text-live {
+    color: #17e04f;
+    font-size: 25px;
+    line-height: 0;
+}
+
+.social-icon {
+    font-size: 18px;
+}
+
+.contact-us-section .form-control {
+    background-color: rgba(235, 238, 240, 1) !important;
+}
+
+.btn-get-in-touch:hover {
+    background-color: #dc3545 !important;
+    transition: 0.3s ease-in-out;
+}
+
+.store-img {
+    width: 96%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.footer-text-muted {
+    color: rgba(153, 153, 153, 1);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.subscribe-email input[type="email"] {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+}
+
+.subscribe-email input[type="email"]::placeholder {
+    color: rgba(218, 217, 217, 0.7) !important;
+    font-weight: 400;
+}
+
+.subscribe-email input[type="email"]:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.footer-icon {
+    font-size: 30px;
+}
+
+/* Animated underline effect - visible by default, disappears and reappears on hover */
+.animated-underline {
+    cursor: pointer !important;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 0.7px;
+    background-color: currentColor;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.animated-underline:hover::after {
+    animation: underlineDisappearReappear 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+/* Animated underline with color change effect */
+.animated-underline-color {
+    transition: color 0.3s ease;
+}
+
+.animated-underline-color::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 0.7px;
+    background-color: currentColor;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.animated-underline-color:hover {
+    animation: colorChangeBack 0.6s ease-in-out;
+}
+
+.animated-underline-color:hover::after {
+    animation: underlineDisappearReappear 0.6s ease-in-out;
+}
+
+@keyframes underlineDisappearReappear {
+    0% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    50% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    51% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+@keyframes colorChangeBack {
+    0% {
+        color: currentColor;
+    }
+
+    50% {
+        color: #dc3545;
+    }
+
+    100% {
+        color: #dc3545;
+    }
+}
+
+/* Default Header Styles - Normal section behavior */
+.merto-header-sticky {
+    position: relative;
+    /* Normal section positioning */
+    width: 86%;
+    margin: auto;
+    z-index: 1000;
+}
+
+/* Fixed mode - activated when contact section is reached */
+.merto-header-sticky.fixed-mode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    padding-left: 7%;
+    /* Maintain the 86% container width centering */
+    padding-right: 7%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    /* Start above viewport */
+    animation: slideDownSmoothFixed 0.4s ease-in-out forwards;
+}
+
+/* Smoother animation without delay */
+@keyframes slideDownSmoothFixed {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
